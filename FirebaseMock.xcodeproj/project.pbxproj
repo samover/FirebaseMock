@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EC05E3F1C3BD24C00CBDF3B /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC05E3E1C3BD24C00CBDF3B /* Firebase.framework */; };
+		7EC05E411C3BD25A00CBDF3B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC05E401C3BD25A00CBDF3B /* Security.framework */; };
+		7EC05E431C3BD26100CBDF3B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC05E421C3BD26100CBDF3B /* CFNetwork.framework */; };
+		7EC05E451C3BD26B00CBDF3B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC05E441C3BD26B00CBDF3B /* libc++.tbd */; };
+		7EC05E471C3BD27100CBDF3B /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC05E461C3BD27100CBDF3B /* libicucore.tbd */; };
+		7EC05E491C3BD29000CBDF3B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC05E481C3BD29000CBDF3B /* SystemConfiguration.framework */; };
+		7EC05E4A1C3BD31C00CBDF3B /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC05E3E1C3BD24C00CBDF3B /* Firebase.framework */; };
 		7EFB10571C396B85001D4272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB10561C396B85001D4272 /* AppDelegate.swift */; };
 		7EFB10591C396B85001D4272 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB10581C396B85001D4272 /* ViewController.swift */; };
 		7EFB105C1C396B85001D4272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFB105A1C396B85001D4272 /* Main.storyboard */; };
 		7EFB105E1C396B85001D4272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFB105D1C396B85001D4272 /* Assets.xcassets */; };
 		7EFB10611C396B85001D4272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFB105F1C396B85001D4272 /* LaunchScreen.storyboard */; };
-		7EFB106C1C396B85001D4272 /* FirebaseMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB106B1C396B85001D4272 /* FirebaseMockTests.swift */; };
+		7EFB10771C396C40001D4272 /* firebaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB10761C396C40001D4272 /* firebaseMock.swift */; };
+		7EFB107C1C396CD1001D4272 /* firebaseMockSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB107B1C396CD1001D4272 /* firebaseMockSpecs.swift */; };
+		7EFB107D1C396E74001D4272 /* firebaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB10761C396C40001D4272 /* firebaseMock.swift */; };
+		7EFB10801C396FDE001D4272 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFB107E1C396FDE001D4272 /* Nimble.framework */; };
+		7EFB10811C396FDE001D4272 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFB107F1C396FDE001D4272 /* Quick.framework */; };
+		7EFB10831C397006001D4272 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7EFB107E1C396FDE001D4272 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7EFB10841C397006001D4272 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7EFB107F1C396FDE001D4272 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +38,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7EFB10821C396FEF001D4272 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7EFB10831C397006001D4272 /* Nimble.framework in CopyFiles */,
+				7EFB10841C397006001D4272 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7EC05E3E1C3BD24C00CBDF3B /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		7EC05E401C3BD25A00CBDF3B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7EC05E421C3BD26100CBDF3B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7EC05E441C3BD26B00CBDF3B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		7EC05E461C3BD27100CBDF3B /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		7EC05E481C3BD29000CBDF3B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7EFB10531C396B85001D4272 /* FirebaseMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFB10561C396B85001D4272 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EFB10581C396B85001D4272 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +67,11 @@
 		7EFB10601C396B85001D4272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EFB10621C396B85001D4272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EFB10671C396B85001D4272 /* FirebaseMockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseMockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EFB106B1C396B85001D4272 /* FirebaseMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMockTests.swift; sourceTree = "<group>"; };
 		7EFB106D1C396B85001D4272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EFB10761C396C40001D4272 /* firebaseMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firebaseMock.swift; sourceTree = "<group>"; };
+		7EFB107B1C396CD1001D4272 /* firebaseMockSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firebaseMockSpecs.swift; sourceTree = "<group>"; };
+		7EFB107E1C396FDE001D4272 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		7EFB107F1C396FDE001D4272 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +79,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EC05E491C3BD29000CBDF3B /* SystemConfiguration.framework in Frameworks */,
+				7EC05E471C3BD27100CBDF3B /* libicucore.tbd in Frameworks */,
+				7EC05E451C3BD26B00CBDF3B /* libc++.tbd in Frameworks */,
+				7EC05E431C3BD26100CBDF3B /* CFNetwork.framework in Frameworks */,
+				7EC05E411C3BD25A00CBDF3B /* Security.framework in Frameworks */,
+				7EC05E3F1C3BD24C00CBDF3B /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +92,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFB10801C396FDE001D4272 /* Nimble.framework in Frameworks */,
+				7EC05E4A1C3BD31C00CBDF3B /* Firebase.framework in Frameworks */,
+				7EFB10811C396FDE001D4272 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FCDF689DB14456A67025187 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EC05E481C3BD29000CBDF3B /* SystemConfiguration.framework */,
+				7EC05E461C3BD27100CBDF3B /* libicucore.tbd */,
+				7EC05E441C3BD26B00CBDF3B /* libc++.tbd */,
+				7EC05E421C3BD26100CBDF3B /* CFNetwork.framework */,
+				7EC05E401C3BD25A00CBDF3B /* Security.framework */,
+				7EC05E3E1C3BD24C00CBDF3B /* Firebase.framework */,
+				7EFB107E1C396FDE001D4272 /* Nimble.framework */,
+				7EFB107F1C396FDE001D4272 /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7EFB104A1C396B85001D4272 = {
 			isa = PBXGroup;
 			children = (
 				7EFB10551C396B85001D4272 /* FirebaseMock */,
 				7EFB106A1C396B85001D4272 /* FirebaseMockTests */,
 				7EFB10541C396B85001D4272 /* Products */,
+				1FCDF689DB14456A67025187 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +144,7 @@
 				7EFB105D1C396B85001D4272 /* Assets.xcassets */,
 				7EFB105F1C396B85001D4272 /* LaunchScreen.storyboard */,
 				7EFB10621C396B85001D4272 /* Info.plist */,
+				7EFB10761C396C40001D4272 /* firebaseMock.swift */,
 			);
 			path = FirebaseMock;
 			sourceTree = "<group>";
@@ -90,8 +152,8 @@
 		7EFB106A1C396B85001D4272 /* FirebaseMockTests */ = {
 			isa = PBXGroup;
 			children = (
-				7EFB106B1C396B85001D4272 /* FirebaseMockTests.swift */,
 				7EFB106D1C396B85001D4272 /* Info.plist */,
+				7EFB107B1C396CD1001D4272 /* firebaseMockSpecs.swift */,
 			);
 			path = FirebaseMockTests;
 			sourceTree = "<group>";
@@ -123,6 +185,7 @@
 				7EFB10631C396B85001D4272 /* Sources */,
 				7EFB10641C396B85001D4272 /* Frameworks */,
 				7EFB10651C396B85001D4272 /* Resources */,
+				7EFB10821C396FEF001D4272 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -199,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFB10771C396C40001D4272 /* firebaseMock.swift in Sources */,
 				7EFB10591C396B85001D4272 /* ViewController.swift in Sources */,
 				7EFB10571C396B85001D4272 /* AppDelegate.swift in Sources */,
 			);
@@ -208,7 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EFB106C1C396B85001D4272 /* FirebaseMockTests.swift in Sources */,
+				7EFB107D1C396E74001D4272 /* firebaseMock.swift in Sources */,
+				7EFB107C1C396CD1001D4272 /* firebaseMockSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +347,8 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -320,6 +387,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -329,10 +398,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FirebaseMock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.samover.FirebaseMock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -340,10 +421,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FirebaseMock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.samover.FirebaseMock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 			};
 			name = Release;
 		};
@@ -351,10 +443,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FirebaseMockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.samover.FirebaseMockTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirebaseMock.app/FirebaseMock";
 			};
 			name = Debug;
@@ -363,10 +465,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FirebaseMockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.samover.FirebaseMockTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirebaseMock.app/FirebaseMock";
 			};
 			name = Release;
@@ -390,6 +502,7 @@
 				7EFB10721C396B85001D4272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EFB10731C396B85001D4272 /* Build configuration list for PBXNativeTarget "FirebaseMockTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +511,7 @@
 				7EFB10751C396B85001D4272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,36 @@
+### Xcode ###
+# Xcode
+#
+
+## OSX Temporary files
+.DS_Store
+.Trashers
+*.swp
+
+## XCode temporary files
+*~.nib
+
+## XCode build files 
+build/
+DerivedData/
+
+## XCode Private settings
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+
+## XCode default settings to include
+!default.perspectivev3
+!default.mode2v3
+!default.mode1v3
+!default.pbxuser
+
+## Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+node_modules/
+Carthage/
+Firebase.framework
