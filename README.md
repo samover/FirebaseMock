@@ -1,4 +1,4 @@
-# MockFirebase for Swift
+# Firebase Mock for Swift
 
 This is an ad-hoc mock class for UI testing with Firebase and Swift for a small project I am working on.. 
 
@@ -11,5 +11,7 @@ This is an ad-hoc mock class for UI testing with Firebase and Swift for a small 
 
 ## How to contribute
 1. Fork the repo
+2. Add the [Firebase
+   framework](https://www.firebase.com/docs/ios/alternate-setup.html) to the project
 2. Add more mock firebase functions
 3. Create a pull request
